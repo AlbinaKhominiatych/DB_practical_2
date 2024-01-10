@@ -1,5 +1,5 @@
---Завдання 7: Звіт з умовою
---Створіть запит, щоб вивести ім'я та вік студентів, які мають вік менше або рівний 20 рокам.
-SELECT student_name, age
-FROM Students
-WHERE age >= 20
+--Завдання 8: Зовнішні ключі. Створіть другу таблицю "Courses" з полями
+CREATE TABLE Courses(
+course_id SERIAL PRIMARY KEY,
+course_name VARCHAR(100),
+student_id INTEGER REFERENCES Students(student_id));
