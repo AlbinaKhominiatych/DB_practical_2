@@ -1,10 +1,5 @@
---Завдання 8: Зовнішні ключі. Створіть другу таблицю "Courses" з полями 
--- Наповніть цю таблицю.
-INSERT INTO Courses (course_name, student_id)
-VALUES ('Mathematics', 1),
-       ('Physics', 2),
-	   ('Information technology', 2),
-	   ('Language', 4),
-       ('Biology', 4),
-	   ('Biology', 1);
-	
+--Завдання 9: З'єднання таблиць
+--Напишіть запит, щоб вивести ім'я студента та назву курсу, який вони вчать.
+SELECT Students.student_name, Courses.course_name
+FROM Students
+JOIN Courses ON Students.student_id = Courses.student_id;
