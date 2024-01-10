@@ -1,5 +1,3 @@
---Завдання 5: Оновлення даних
---Оновіть дані для студента з іменем "John" і збільште його вік на 1 рік.
-UPDATE Students
-SET age = age + 1
-WHERE student_name = 'John Doe'
+--Завдання 6: Видалення данихВидаліть студента з ID = 3 з таблиці "Students".
+DELETE FROM Students
+WHERE student_id = 3
