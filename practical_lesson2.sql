@@ -1,3 +1,5 @@
---Завдання 6: Видалення данихВидаліть студента з ID = 3 з таблиці "Students".
-DELETE FROM Students
-WHERE student_id = 3
+--Завдання 7: Звіт з умовою
+--Створіть запит, щоб вивести ім'я та вік студентів, які мають вік менше або рівний 20 рокам.
+SELECT student_name, age
+FROM Students
+WHERE age >= 20
